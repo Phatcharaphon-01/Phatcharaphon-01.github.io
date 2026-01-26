@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Thinking - หน้าแรก</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .hero p {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .content-box {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-box h3 {
+            color: #764ba2;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .content-box ul {
+            list-style-position: inside;
+            line-height: 2;
+            color: #555;
+        }
+
+        .content-box ul li {
+            margin-bottom: 10px;
+        }
+
+        .stages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .stage-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .stage-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stage-card h4 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .stage-card p {
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #667eea;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎯 Design Thinking</h1>
+        <p>วิชา: Design Thinking | ปี 2 เทอม 2</p>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h2>ยินดีต้อนรับสู่วิชา Design Thinking</h2>
+            <p>
+                Design Thinking เป็นกระบวนการแก้ไขปัญหาที่เน้นให้ความสำคัญกับผู้ใช้ 
+                และการจินตนาการ ผ่านการทำความเข้าใจอย่างลึกซึ้ง การทดลอง และการสร้างสรรค์
+            </p>
+            <a href="#stages" class="btn">เรียนรู้เพิ่มเติม</a>
+        </div>
+
+        <div class="content-box">
+            <h3>📚 บทเรียนที่สำคัญ</h3>
+            <ul>
+                <li>คิดแบบมนุษยนิยม (Human-Centered) - เข้าใจความต้องการของผู้ใช้อย่างแท้จริง</li>
+                <li>การทำงานเป็นทีม - ความสำคัญของการทำงานร่วมกันและการฟังความคิดเห็น</li>
+                <li>การสร้างสรรค์ (Ideation) - ไม่กลัวที่จะนำเสนอแนวคิดใหม่ ๆ</li>
+                <li>การทดลองและเรียนรู้ - Prototype เพื่อทดสอบแนวคิด</li>
+                <li>การปรับปรุงอย่างต่อเนื่อง - รับฟังคำติชม และปรับปรุงผลิตภัณฑ์</li>
+            </ul>
+        </div>
+
+        <div class="content-box">
+            <h3 id="stages">🔄 5 ขั้นตอนของ Design Thinking</h3>
+            <div class="stages">
+                <div class="stage-card">
+                    <h4>1. Empathize</h4>
+                    <p>เข้าใจความต้องการและปัญหาของผู้ใช้ผ่านการสัมภาษณ์และการสังเกต</p>
+                </div>
+                <div class="stage-card">
+                    <h4>2. Define</h4>
+                    <p>นิยามปัญหาที่แท้จริงและสร้างคำชี้แจงปัญหาอย่างชัดเจน</p>
+                </div>
+                <div class="stage-card">
+                    <h4>3. Ideate</h4>
+                    <p>สร้างแนวคิดจำนวนมากผ่านการระดมความคิด (Brainstorming)</p>
+                </div>
+                <div class="stage-card">
+                    <h4>4. Prototype</h4>
+                    <p>สร้างต้นแบบขนาดเล็กเพื่อทดสอบแนวคิด</p>
+                </div>
+                <div class="stage-card">
+                    <h4>5. Test</h4>
+                    <p>ทดสอบกับผู้ใช้จริงและรับฟังคำติชม เพื่อปรับปรุง</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h3>📖 ทรัพยากรที่มีประโยชน์</h3>
+            <ul>
+                <li><strong>หนังสือที่แนะนำ:</strong> "The Design of Everyday Things" โดย Don Norman</li>
+                <li><strong>เว็บไซต์:</strong> d.school.stanford.edu - ศูนย์กลางของ Design Thinking</li>
+                <li><strong>เครื่องมือ:</strong> Figma, Adobe XD สำหรับออกแบบ</li>
+                <li><strong>วิดีโอ:</strong> YouTube channels ที่เกี่ยวกับ UX/UI Design</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 วิชา Design Thinking | <a href="index.html">กลับหน้าแรก</a></p>
+    </footer>
+</body>
+</html>
